@@ -62,3 +62,4 @@ function calculate(...a) {
 
 English: ICAO operational level 4 (B2).
 Russian: native.
+
