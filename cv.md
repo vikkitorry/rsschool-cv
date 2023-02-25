@@ -44,6 +44,7 @@ function calculate(...a) {
 ## Experience
 
 **Engineer (architect)**
+
 2016 - 2022 (6 years)
 
 ---
@@ -51,9 +52,11 @@ function calculate(...a) {
 ## Education
 
 **Siberian Federal University**
+
 *2012-2016*
 
 **St. Petersburg State University of Civil Aviation**
+
 *2018-2022*
 
 ---
@@ -61,5 +64,6 @@ function calculate(...a) {
 ## Languages
 
 English: ICAO operational level 4 (B2).
+
 Russian: native.
 
