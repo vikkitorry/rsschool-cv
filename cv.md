@@ -44,8 +44,7 @@ function calculate(...a) {
 ## Experience
 
 **Engineer (architect)**
-
-*2016 - 2022 (6 years)*
+2016 - 2022 (6 years)
 
 ---
 
