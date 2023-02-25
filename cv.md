@@ -52,6 +52,7 @@ function calculate(...a) {
 
 **Siberian Federal University**
 *2012-2016*
+
 **St. Petersburg State University of Civil Aviation**
 *2018-2022*
 
