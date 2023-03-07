@@ -254,8 +254,89 @@ a {
 .code-example{
     width: 100%;
 }
-
-
+.boll__container{
+    position: relative;
+    width: 100%;
+    height: 105px;
+}
+.boll{
+    background-color:rgba(56, 56, 56, 0.196);
+    height:120px;
+    border-radius:50%;
+    width: 120px;
+    margin: auto;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    animation: pulse 3s linear infinite;
+}
+.boll-2{
+    background-color:rgba(156, 116, 116, 0.074);
+    height:90px;
+    border-radius:50%;
+    width: 90px;
+    margin: auto;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    animation: pulse-2 2s linear infinite;
+}
+.boll-3{
+    background-color:rgba(153, 97, 97, 0.167);
+    height:50px;
+    border-radius:50%;
+    width: 50px;
+    margin: auto;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    animation: pulse-3 1s linear infinite;
+}
+@keyframes pulse{
+    0%{width:120px;height:120px;}
+    50%{width:100px;height:100px;}
+    100%{width:120px;height:120px;}
+}
+@keyframes pulse-2{
+    0%{width:90px;height:90px;}
+    50%{width:50px;height:50px;}
+    100%{width:90px;height:90px;}
+}
+@keyframes pulse-3{
+    0%{width:50px;height:50px;}
+    50%{width:30px;height:30px;}
+    100%{width:50px;height:50px;}
+}
+.heart{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    background: url(./assets/icons/heart-50.png) no-repeat center;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+    animation: pulseHeart 1s linear infinite;
+    cursor: pointer;
+}
+.easter-eggs{
+    display: none;
+}
+.easter-eggs-active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: rgba(153, 97, 97, 0.389);
+    top: 100%; left: 50%;
+    transform: translate(-50%,-50%);
+    width: 900px;
+    height: 500px;
+    border-radius: 20px;
+    z-index: 3;
+}
+.easter-eggs-text{
+    font-size: 40px;
+}
 /*experience*/
 .information__container{
    background-color: rgba(46, 45, 45, 0.196);
