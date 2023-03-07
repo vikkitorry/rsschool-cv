@@ -1,0 +1,477 @@
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("./assets/fonts/Montserrat-SemiBold.ttf");
+    font-style: semibold;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url("./assets/fonts/Montserrat-Bold.ttf");
+    font-style: bold;
+}
+  @font-face {
+    font-family: Montserrat;
+    src: url("./assets/fonts/Montserrat-Regular.ttf");
+    font-style: normal;
+}
+html {
+    box-sizing: border-box;
+}  
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    scroll-behavior: smooth;
+    font-family: 'Montserrat';
+    font-style: normal;
+    color: aliceblue;
+    font-weight: 400;
+    font-size: 16px;
+    height: 100vh;
+    background-color: #171717fa;
+}
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.main__container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 30px;
+}
+.overlay {
+    display: none;
+}
+.overlay_active {
+    width: 100%;
+    height: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(99, 98, 98, 0.5);
+}
+/*header*/
+.header__container {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: #212020b4;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(58, 58, 58, 0.34);
+    margin-bottom: 30px;
+}
+.header__nav-list {
+    margin: 0;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+}
+.header_link {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    color: rgba(240, 248, 255, 0.749);
+    font-weight: 600;
+    line-height: 24px;
+    text-decoration: none;
+}
+.nav-item:hover, :focus {
+    transform: scale(1.2);
+    text-shadow: #151515 4px 4px 3px;
+}
+.burger{
+    display: none;
+    margin-top: 5px;   
+    margin-right: 30px;
+    width: 30px;
+    height: 30px;
+}
+
+/*aside*/
+.aside-section {
+    background-color:  rgba(46, 45, 45, 0.196);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border-radius: 30px;
+    padding: 20px;
+    padding-left: 30px;
+    gap: 30px;
+}
+.personal__photo{
+    align-self: center;
+}
+.photo {
+    max-width: 300px;
+    border-radius: 30px;
+}
+.name {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: left;
+    color: rgba(240, 248, 255, 0.61);
+    margin-bottom: 15px;
+}
+.second_name{
+   margin-left: 70px;
+   font-size: 45px;
+   line-height: 45px;
+   color: rgba(240, 248, 255, 0.818);
+}
+.profession{
+    font-family: "Montserrat";
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 600;
+}
+.personal__contacts {
+    width: 100%;
+}
+.tittle-h3{
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 20px;
+    color: rgba(240, 248, 255, 0.655);
+    margin-bottom: 20px;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+.list-item {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    height: 40px;
+    padding-left: 10px;
+    background-color: rgba(56, 56, 56, 0.196);
+    border-radius: 15px;
+}
+.contact-link{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(240, 248, 255, 0.784);
+}
+.contact-link:hover {
+    transform: scale(1.1);
+    color: rgba(249, 247, 247, 0.729);
+    text-shadow: #151515a9 4px 4px 3px;
+}
+.icon{
+    width: 25px;
+    height: 25px;
+}
+.skills{
+    width: 100%;
+}
+.skill-item {
+   flex-direction: column; 
+   height: 70px;
+}
+.skill_progress{
+    position: relative;
+    width: 95%;
+    height: 10px;
+    background-color: rgba(102, 100, 100, 0.196);
+    border-radius: 5px;
+}
+.skill_progress-active {
+    position: absolute;
+    height: 10px;
+    background-color: rgba(192, 23, 23, 0.196);
+    border-radius: 5px;
+}
+.skill-html{
+    width: 67%;
+}
+.skill-css{
+    width: 60%;
+}
+.skill-javaScript{
+    width: 70%;
+}
+.skill-git{
+    width: 40%;
+}
+.skill-figma{
+    width: 80%; 
+}
+.skill-heart{
+    position: absolute;
+    top: -6px;
+    margin-left: 98%;
+    width: 25px;
+    height: 25px;
+}
+.subtittle{
+    width: 100%;
+    text-align: start;
+    line-height: 20px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(240, 248, 255, 0.655);
+    margin-top: 7px;
+}
+.languages{
+    width: 100%;
+}
+.languages__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 7px;
+    padding: 20px;
+    padding-left: 10px;
+    background-color: rgba(56, 56, 56, 0.196);
+    border-radius: 15px;
+}
+.languages__container .subtittle{
+    font-weight: 500;
+    font-size: 20px;
+}
+.subtittle-desc{
+    padding-left: 50px;
+}
+.code-example{
+    width: 100%;
+}
+
+
+/*experience*/
+.information__container{
+   background-color: rgba(46, 45, 45, 0.196);
+   border-radius: 30px;
+   padding: 40px;
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   width: 100%; 
+}
+.experience__container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: rgba(56, 56, 56, 0.196);
+    border-radius: 15px;
+}
+.experience__container:hover {
+    box-shadow: 5px 5px 5px rgba(58, 58, 58, 0.34); 
+}
+.list-item:hover{
+    box-shadow: 5px 5px 5px rgba(58, 58, 58, 0.34);
+}
+.tittle-h2{
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 26px;
+    color: rgba(240, 248, 255, 0.655);
+    text-align: left; 
+    text-transform: uppercase; 
+}
+.experience__text{
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(240, 248, 255, 0.511);
+    text-align: left; 
+    line-height: 28px;
+}
+.about_me{
+    margin-bottom: 15px;
+}
+.big-subtittle{
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 22px;
+    color: rgba(240, 248, 255, 0.511);
+    text-align: left;
+    line-height: 26px;
+}
+.experience__date{
+    font-weight: 400;
+    font-size: 18px; 
+}
+.university__container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.coding__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.hover:hover {
+    transform: scale(1.03);
+    color: rgba(249, 247, 247, 0.729);
+    text-shadow: #151515a9 4px 4px 3px; 
+}
+.codewars-icon{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: #15151553 4px 4px 3px;
+}
+.experience__job{
+    width: 40%;
+}
+.job-projects__container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+}
+.projects-pic{
+    max-width: 280px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 3px rgba(249, 247, 247, 0.223);
+}
+.experience__projects{
+    width: 60%;
+}
+.job__container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.job {
+    gap: 12px;
+}
+.hobby__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 15px;
+    padding-bottom: 20px;
+}
+.hobby-icon {
+    width: 60px;
+    height: 60px;
+}
+.piano {
+    background: url(./assets/icons/piano.png) no-repeat;
+}
+.computer {
+    background: url(./assets/icons/computer.png) no-repeat;
+}
+.ski {
+    background: url(./assets/icons/ski.png) no-repeat;
+}
+/*footer*/
+.footer__container {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: #212020b4;
+    border-radius: 10px;
+    box-shadow: 3px -3px 3px 3px rgba(76, 76, 76, 0.34);
+    margin-top: 30px;
+}
+.footer__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+.rs-icon{
+    width: 60px;
+}
+.footer_text {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: rgba(240, 248, 255, 0.749);
+    font-weight: 600;
+    line-height: 18px;
+}
+
+@media(max-width: 1320px) {
+    .job-projects__container{
+        flex-direction: column;
+    }
+    .experience__job, .experience__projects, .personal__photo{
+        width: 100%;
+    }
+    .codewars{
+        display: none;
+    }
+    .personal__photo{
+        display: flex;
+    }
+    .photo{
+        border-radius: 50px;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+@media(max-width: 1080px) {
+    .header__container {
+        height: 35px;
+    }
+    .main__container{
+        display: flex;
+        flex-direction: column;
+    }
+    .burger{
+        display: block;
+    }
+    .header__nav-list{
+        display: none;
+    }
+    .header__nav{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: end;
+    }
+    .personal__photo{
+        margin-top: 30px;
+    }
+    .codewars{
+        display: none;
+    }
+    .header__container{
+        position: fixed;
+        z-index: 2;
+    }
+    .header__nav-active{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 20px;
+        position: fixed;
+        background: rgba(140, 19, 19, 0.766);
+        width: 200px;
+        height: 300px;
+        z-index: 2;
+        top: 35px;
+        gap: 10px;
+    }
+    .boll__container{
+        display: none;
+    }
+    .easter-eggs-active{
+        display: none;
+    }
+}
